@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@300;600;700&family=Lexend+Deca&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+:root{
+
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+
+body{
+
+    background-color: var(--Dark-cyan);
+    
+    font-family: 'Inter', sans-serif;
+    padding: 10em 0 4em 0;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*imagenes de fondo */
+.cover__img--top{
+  overflow: hidden;
+  width: 67%;
+  position: absolute;
+}
+
+.card-bg-top{
+    width: 100%;
+}
+
+
+.cover__img--top {
+  top: -15rem;
+  left: -10rem;
+  transform: translate(-10rem, -15rem);
+}
+
+
+/*caja principal*/
+.container{
+    width: 24em;
+    height: 24em;
+    background-color: white;
+    border-radius: 10px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 999;
+    overflow: hidden;
+}
+
+/*caja de la imagen de fondo */
+.box{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box img{    
+    width: 110%;
+    height: 35vh;
+    border-radius: 10px 10px 0px 0px;
+}
+
+/*caja principal de los datos personales*/
+.box-title{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+
+.box-title img {
+   
+    width: 80%;
+    border: 5px solid white;
+    border-radius: 50%;
+    transform: translateY(-4rem);
+}
+
+.box-title h1 {
+    font-size: 20px;
+    font-weight: 600;
+
+    padding-top: 10px;
+    transform: translateY(-3rem);
+}
+
+.box-title span {
+    
+    font-size: 18px;
+    font-weight: 500;
+    
+    color: var(--Dark-gray);
+}
+
+.box-title p {
+    font-size: 15px;
+    font-weight: 400;
+
+    color: var(--Dark-gray);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transform: translateY(-3rem);
+}
+
+/*caja de las estadisticas de las RS*/
+.box-statistics{
+
+    width: 100%;
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    border-top: 1px solid hsl(0, 0%, 90%);
+    display: flex;
+    justify-content: space-around;
+    transform: translateY(-3rem);
+}
+
+.box-statistics h2 {
+    font-size: 23px;
+    font-weight: 600;
+
+    text-align: center;
+
+    color: #1f1e1e;
+}
+
+.box-statistics span {
+    font-size: 16px;
+    font-weight: 500;
+   
+    
+    color: #817b7b;
+}
+
+/*pie de pagina */
+.attribution {
+    padding: 2em;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center; 
+}
+
+.attribution a {
+    text-decoration: none; 
+    color: white 
+}
+
+@media (max-width: 450px){
+    body{
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .attribution{
+        font-size: 12px;
+
+    }
+}
